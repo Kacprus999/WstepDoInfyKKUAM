@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE sklep [
+	<!ELEMENT sklep (dzialy+)>
+	<!ELEMENT dzialy (polki+)>
+	<!ATTLIST dzialy nr CDATA #REQUIRED>
+	<!ATTLIST polki typ CDATA #REQUIRED>
+	<!ELEMENT polki (nr*, produkt*)>
+	<!ELEMENT produkt (nazwa, kod, wytworca)>
+	<!ELEMENT nazwa (#PCDATA)>
+	<!ELEMENT kod (#PCDATA)>
+	<!ELEMENT wytworca (#PCDATA)>
+	<!ELEMENT nr (#PCDATA)>
+]>
+<sklep>
+	<dzialy nr="01">
+		<polki typ="spozywcze">
+			<nr> 001 </nr>
+			<produkt>
+				<nazwa> Chleb </nazwa>
+				<kod> 015483595632 </kod>
+				<wytworca> Bagietka </wytworca>
+			</produkt>
+			<produkt>
+				<nazwa> Bulka </nazwa>
+				<kod> 015483595754 </kod>
+				<wytworca> Piekarnia Krzysiek </wytworca>
+			</produkt>
+		</polki>
+		<polki typ="spozywcze">
+			<nr> 002 </nr>
+			<produkt>
+				<nazwa> sok pomarancz </nazwa>
+				<kod> 015483569348 </kod>
+				<wytworca> Tymbark </wytworca>
+			</produkt>
+			<produkt>
+				<nazwa> woda ngaz </nazwa>
+				<kod> 015483678953 </kod>
+				<wytworca> Zywiec </wytworca>
+			</produkt>
+		</polki>
+	</dzialy>
+	<dzialy nr="02">
+		<polki typ="papiernicze">
+			<nr> 001 </nr>
+			<produkt>
+				<nazwa> blok tech </nazwa>
+				<kod> 015436485397 </kod>
+				<wytworca> Ziomek </wytworca>
+			</produkt>
+			<produkt>
+				<nazwa> kalkulator </nazwa>
+				<kod> 015436798234 </kod>
+				<wytworca> Wykalk </wytworca>
+			</produkt>
+		</polki>
+		<polki typ="odziez">
+			<nr> 005 </nr>
+			<produkt>
+				<nazwa> tshirt </nazwa>
+				<kod> 015978459831 </kod>
+				<wytworca> ZARA </wytworca>
+			</produkt>
+			<produkt>
+				<nazwa> skarpetki </nazwa>
+				<kod> 015985664831 </kod>
+				<wytworca> skarpet </wytworca>
+			</produkt>
+		</polki>
+	</dzialy>
+</sklep>

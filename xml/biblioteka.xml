@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE library [
+	<!ELEMENT library (storage+)>
+	<!ELEMENT storage (shelf+)>
+	<!ATTLIST shelf domain CDATA #REQUIRED>
+	<!ELEMENT shelf (book*, magazine*)>
+	<!ELEMENT book (title, author)>
+	<!ELEMENT magazine (title, author)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT author (#PCDATA)>
+]>
+<library>
+	<storage>
+		<shelf domain="Test">
+			<book>
+				<title>
+					Test
+				</title>
+				<author>
+					Test Test
+				</author>
+			</book>
+			<book>
+				<title>
+					Test1
+				</title>
+				<author>
+					Test Test
+				</author>
+			</book>
+			<book>
+				<title>
+					Test2
+				</title>
+				<author>
+					Test Test
+				</author>
+			</book>
+		</shelf>
+	</storage>
+	<storage>
+	</storage>
+</library>
